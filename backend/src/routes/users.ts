@@ -42,7 +42,7 @@ router.post("/register", [
                 secure: process.env.NODE_ENV === "production",
                 maxAge: 84600000,
             })
-            return res.sendStatus(200);
+            return res.status(200).send({message: "User regestered successfully!"});
         } catch (error) {
             console.log(error);
             res.status(500).send({
