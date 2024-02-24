@@ -9,7 +9,7 @@ import cookieParser from 'cookie-parser'
 mongoose
     .connect(process.env.MONGODB_CONNECTION_STRING as string)
     .then(() => {
-        console.log("Connected to MongoDB");
+        console.log("Connected to Mongodb");
     })
     .catch((err) => {
         console.log(err);
